@@ -1,12 +1,12 @@
 # This is workflow name
-name: Hello 
+name: Hello workflow
 # runs on trigger
 on:
  push:
   branches: [main]
  #workflow_dispatch: 
-  paths:
-  - '**.html'
+  #paths:
+  #- '**.html'
       
 # These are jobs inside the workflow
 jobs:
@@ -24,5 +24,5 @@ jobs:
   details:
       runs-on: ubuntu-latest
       steps:
-        - name: version of python,docker,etc
+        - name: show what is the version of python,docker,etc
           run: docker --version && python --version
