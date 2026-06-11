@@ -2,7 +2,7 @@
 name: Hello workflow
 # runs on trigger
 on:
- push:
+ #push:
   #branches: [main]
   workflow_dispatch: 
   #paths:
